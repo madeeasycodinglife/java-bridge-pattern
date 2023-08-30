@@ -7,6 +7,16 @@ The Bridge Design Pattern decouples an abstraction from its implementation so th
 
 Here's an example of a bridge pattern in Java that separates the drawing of shapes from the shapes themselves:
 
+   Shape
+    /    \
+Circle  Rectangle
+    |         |
+DrawingAPI  DrawingAPI
+  /    \       /     \
+  Red   Blue  Red   Blue
+
+
+
 ```java
 // Abstraction (Shape)
 abstract class Shape {
